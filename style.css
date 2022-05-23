@@ -130,6 +130,14 @@ h1 {
     padding-top: 20vh;
 }
 
+.reg_container {
+    display: grid;
+    width: 35vw;
+    margin: auto;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
 .contact_container {
     display: grid;
     width: 35vw;
@@ -315,4 +323,14 @@ option {
 .multiply,
 .divide {
     background-color: lightgray;
+}
+
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;
 }
