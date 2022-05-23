@@ -18,7 +18,7 @@
   <body>
     <header>
       <div class="brand">
-        <img src="logo.png" alt="Ayodeji Balogun" />
+        <img src="images/logo.png" alt="Ayodeji Balogun" />
       </div>
 
       <div class="nav">
@@ -46,7 +46,7 @@
       </div>
     </header>
 
-    <div class="container">
+    <div class="reg_container">
       <div class="register">
         <form action="#" class="register_form">
           <div class="form_item">
@@ -66,6 +66,66 @@
               class="form_input"
               placeholder="Your email address"
               aria-label="Email"
+            />
+          </div>
+
+          <div class="form_item">
+            <label for="Priority">Gender:</label>
+            <select name="gender" id="gender" class="select">
+                <option selected disabled>Select gender</option>
+                <option value="Urgent">Male</option>
+                <option value="Important">Female</option>
+                <option value="Minor">Other</option>
+            </select>
+          </div>
+
+          <div class="form_item">
+            <label for="name">Phone:</label>
+            <input
+              type="tel"
+              class="form_input"
+              placeholder="Your phone number"
+              aria-label="Phone"
+            />
+          </div>
+
+          <div class="form_item">
+            <label for="name">Country:</label>
+            <input
+              type="text"
+              class="form_input"
+              placeholder="Your country"
+              aria-label="Country"
+            />
+          </div>
+
+          <div class="form_item">
+            <label for="name">State/Province:</label>
+            <input
+              type="text"
+              class="form_input"
+              placeholder="Your state/province"
+              aria-label="State"
+            />
+          </div>
+
+          <div class="form_item">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              class="form_input"
+              placeholder="Your username"
+              aria-label="username"
+            />
+          </div>
+
+          <div class="form_item">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              class="form_input"
+              placeholder="Your password"
+              aria-label="password"
             />
           </div>
 
