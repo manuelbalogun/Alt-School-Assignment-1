@@ -6,8 +6,9 @@
 }
 
 :root {
-    --clr-primary: #f70058;
     --clr-dark: #1c2427;
+    --clr-dark-green: #0a6a38;
+    --clr-light-green: #0C8346;
     --clr-light: #fff;
     --fw-regular: 400;
     --fw-medium: 500;
@@ -20,7 +21,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: var(--clr-dark);
     font-size: 1.125rem;
-    color: clr(--clr-dark);
+    color: var(--clr-light);
 }
 
 header {
@@ -211,4 +212,107 @@ option {
     border: 2px solid transparent;
     height: 100px;
     text-align: left;
+}
+
+.calculator_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.calculator {
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.calculator_display {
+    background-color: #3A4E48;
+    color: var(--clr-light);
+    width: auto;
+    padding: 0.75rem 2rem;
+    text-align: right;
+    font-size: 3rem;    
+    font-weight: 600;
+}
+
+.key {
+    background: #99C5B5;
+    color: var(--clr-dark);
+    font-size: 1.2rem;    
+    font-weight: 500;
+    padding: 1.5rem;
+}
+
+.key:hover {
+    background: #fff;
+}
+
+.calculator_keys {
+    display: grid;
+    grid-template-columns: repeat(4, 160px);
+    grid-template-areas: 
+        ". . . ."
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "zero decimal clear equal";
+    grid-gap: 0.8px;
+}
+
+.calculator_keys > button {
+    border: 0;
+}
+
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.zero {
+    grid-area: zero;
+}
+.clear {
+    grid-area: clear;
+}
+.decimal {
+    grid-area: decimal;
+}
+.equal {
+    grid-area: equal;
+    background-color: var(--clr-light);
+}
+
+.equal:hover {
+    background-color: lightcyan;
+}
+
+.plus,
+.minus,
+.multiply,
+.divide {
+    background-color: lightgray;
 }
